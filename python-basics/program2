@@ -2,3 +2,6 @@
 #multiline comments
 name="deep..!"
 print(name)
+
+'''
+this is triple-quoted string of multiline comment.'''
