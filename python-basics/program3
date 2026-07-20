@@ -1,6 +1,13 @@
 #lines and indentation
-
+#indentation with if
 age = 18
 if age >= 18:
     print("You are eligible to vote.")
 print("Program Ended")
+
+#indentation with if-else 
+n=5
+if n%2==0;
+    print("Even");
+else:
+    print("Odd);
