@@ -1,7 +1,29 @@
-#python program to demonstrate
-#multiline comments
-name="deep..!"
-print(name)
+import random
 
-'''
-this is triple-quoted string of multiline comment.'''
+print("Welcome to Snake, Water, Gun Game!")
+print("Enter your choice: 's' for Snake, 'w' for Water, 'g' for Gun")
+
+choices = {'s': 'Snake', 'w': 'Water', 'g': 'Gun'}
+options = ['s', 'w', 'g']
+
+computer = random.choice(options)
+
+user = input("Your choice: ").lower()
+
+if user not in options:
+    print("Invalid input!")
+else:
+    print(f"Computer chose: {choices[computer]}")
+    print(f"You chose: {choices[user]}")
+
+    # Result logic
+    if user == computer:
+        print("It's a draw!")
+
+    elif (user == 's' and computer == 'w') or \
+         (user == 'w' and computer == 'g') or \
+         (user == 'g' and computer == 's'):
+        print("You win!")
+
+    else:
+        print("You lose!")
