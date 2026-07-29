@@ -1,0 +1,43 @@
+print("===== Unit Converter =====")
+
+print("1. Kilometers to Miles")
+print("2. Miles to Kilometers")
+print("3. Centimeters to Meters")
+print("4. Meters to Centimeters")
+print("5. Kilograms to Pounds")
+print("6. Pounds to Kilograms")
+
+choice = int(input("Enter your choice (1-6): "))
+
+if choice == 1:
+    km = float(input("Enter distance in Kilometers: "))
+    miles = km * 0.621371
+    print("Distance in Miles =", miles)
+
+elif choice == 2:
+    miles = float(input("Enter distance in Miles: "))
+    km = miles / 0.621371
+    print("Distance in Kilometers =", km)
+
+elif choice == 3:
+    cm = float(input("Enter length in Centimeters: "))
+    meters = cm / 100
+    print("Length in Meters =", meters)
+
+elif choice == 4:
+    meters = float(input("Enter length in Meters: "))
+    cm = meters * 100
+    print("Length in Centimeters =", cm)
+
+elif choice == 5:
+    kg = float(input("Enter weight in Kilograms: "))
+    pounds = kg * 2.20462
+    print("Weight in Pounds =", pounds)
+
+elif choice == 6:
+    pounds = float(input("Enter weight in Pounds: "))
+    kg = pounds / 2.20462
+    print("Weight in Kilograms =", kg)
+
+else:
+    print("Invalid choice! Please enter a number between 1 and 6.")
