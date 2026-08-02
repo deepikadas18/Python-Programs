@@ -1,66 +1,66 @@
-print("===== Simple Quiz Game =====")
+print("===== Quiz Game =====")
 
 score = 0
 
-print("\n1. What is the capital of India?")
-print("a) Mumbai")
-print("b) Delhi")
-print("c) Kolkata")
+print("\n1. Which country has the largest number of time zones (including overseas territories)?")
+print("a) Russia")
+print("b) United States")
+print("c) France")
+answer = input("Enter your answer (a/b/c): ").lower()
+
+if answer == "c":
+    print("Correct!")
+    score += 1
+else:
+    print("Wrong! Correct answer is France.")
+
+print("\n2. Which chemical element has the highest melting point among pure elements?")
+print("a) Tungsten")
+print("b) Carbon")
+print("c) Osmium")
+answer = input("Enter your answer (a/b/c): ").lower()
+
+if answer == "a":
+    print("Correct!")
+    score += 1
+else:
+    print("Wrong! Correct answer is Tungsten.")
+
+print("\n3. Which is the deepest ocean trench in the world?")
+print("a) Java Trench")
+print("b) Mariana Trench")
+print("c) Tonga Trench")
 answer = input("Enter your answer (a/b/c): ").lower()
 
 if answer == "b":
     print("Correct!")
     score += 1
 else:
-    print("Wrong! Correct answer is Delhi.")
+    print("Wrong! Correct answer is Mariana Trench.")
 
-print("\n2. Which language is used for Python programming?")
-print("a) Python")
-print("b) Java")
-print("c) C++")
-answer = input("Enter your answer (a/b/c): ").lower()
-
-if answer == "a":
-    print("Correct!")
-    score += 1
-else:
-    print("Wrong! Correct answer is Python.")
-
-print("\n3. What is 5 + 7?")
-print("a) 10")
-print("b) 11")
-print("c) 12")
+print("\n4. Which Indian scientist is known as the "Missile Man of India"?")
+print("a) Homi J. Bhabha")
+print("b) Vikram Sarabhai")
+print("c) A. P. J. Abdul Kalam")
 answer = input("Enter your answer (a/b/c): ").lower()
 
 if answer == "c":
     print("Correct!")
     score += 1
 else:
-    print("Wrong! Correct answer is 12.")
+    print("Wrong! Correct answer is A. P. J. Abdul Kalam.")
 
-print("\n4. Which keyword is used for conditions in Python?")
-print("a) if")
-print("b) loop")
-print("c) print")
+print("\n5. Which is the largest gland in the human body?")
+print("a) Pancreas")
+print("b) Liver")
+print("c) Pituitary")
 answer = input("Enter your answer (a/b/c): ").lower()
 
-if answer == "a":
+if answer == "b":
     print("Correct!")
     score += 1
 else:
-    print("Wrong! Correct answer is if.")
-
-print("\n5. How many days are there in a week?")
-print("a) 5")
-print("b) 6")
-print("c) 7")
-answer = input("Enter your answer (a/b/c): ").lower()
-
-if answer == "c":
-    print("Correct!")
-    score += 1
-else:
-    print("Wrong! Correct answer is 7.")
+    print("Wrong! Correct answer is Liver.")
 
 percentage = (score / 5) * 100
 
